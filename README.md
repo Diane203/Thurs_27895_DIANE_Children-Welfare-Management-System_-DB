@@ -247,14 +247,35 @@ OVERVIEW ON CREATING TABLES:
 
    
 
-    FIGURE 1 
+ 🟦FIGURE 1:  
+ 
+![insertation](https://github.com/user-attachments/assets/eb70e95d-1ebc-446b-89cf-91ddb163fd9a)
 
-     ![insertation 2](https://github.com/user-attachments/assets/1c8dce1a-5424-4b40-a420-e33d22ac31ef)
-
-     ![insertation 2](https://github.com/user-attachments/assets/112d8937-34ea-43ba-a891-a8b8f4715d6f)
-     
+    
+🟦FIGURE 2     
 
 ![insertation 2](https://github.com/user-attachments/assets/dfeb2b3d-15e0-439c-bdd7-b2c0b49786a2)
+
+
+🟦FIGURE 3 
+
+
+![insertation 3](https://github.com/user-attachments/assets/85529573-d1cc-4501-a86e-373929660cc3)
+
+
+🟦FIGURE 4
+
+
+![insertation 4](https://github.com/user-attachments/assets/b21e291b-8ac9-4034-9558-af3b39c2b366)
+
+
+
+.**These are clear querries and output on how we created and inserted data in our system**
+
+
+
+
+**VI. Phase: Database Interaction and Transactions** 
 
 
 
