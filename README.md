@@ -249,7 +249,7 @@ OVERVIEW ON CREATING TABLES:
 
     FIGURE 1 
 
-      ![image](https://github.com/user-attachments/assets/4d7d791c-4329-45b3-8083-324757145ed9)
+     ![insertation 2](https://github.com/user-attachments/assets/1c8dce1a-5424-4b40-a420-e33d22ac31ef)
 
 
 
