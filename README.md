@@ -225,11 +225,11 @@ This model can handle:
  **V. Phase: Table Implementation and Data Insertion**
  
 
- OVERVIEW ON CREATING TABLES THAT WE USED IN THIS SYSTEM
+ ❇️OVERVIEW ON CREATING TABLES THAT WE USED IN THIS SYSTEM
  
 **1. Table Creation**
 
-OVERVIEW ON CREATING TABLES:
+❇️OVERVIEW ON CREATING TABLES:
 
 ![table creation1](https://github.com/user-attachments/assets/f30ccec7-6986-4fa2-9eea-7eed241a0790)
 
@@ -243,7 +243,7 @@ OVERVIEW ON CREATING TABLES:
 
    **2. Data Insertion:**
 
-   OVERVIEW ON INSERTING DATA:
+   ❇️OVERVIEW ON INSERTING DATA:
 
    
 
@@ -270,12 +270,17 @@ OVERVIEW ON CREATING TABLES:
 
 
 
-.**These are clear querries and output on how we created and inserted data in our system**
+.**⚠️These are clear querries and output on how we created and inserted data in our system**
 
 
 
 
-**VI. Phase: Database Interaction and Transactions** 
+
+**VI. Phase: DATABASE INTERACTIONS and TRANSACTIONS** 
+
+
+**1. Database Operations:**
+
 
 
 
