@@ -251,6 +251,11 @@ OVERVIEW ON CREATING TABLES:
 
      ![insertation 2](https://github.com/user-attachments/assets/1c8dce1a-5424-4b40-a420-e33d22ac31ef)
 
+     ![insertation 2](https://github.com/user-attachments/assets/112d8937-34ea-43ba-a891-a8b8f4715d6f)
+     
+
+![insertation 2](https://github.com/user-attachments/assets/dfeb2b3d-15e0-439c-bdd7-b2c0b49786a2)
+
 
 
 
