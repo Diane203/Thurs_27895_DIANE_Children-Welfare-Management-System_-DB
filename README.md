@@ -247,19 +247,16 @@ OVERVIEW ON CREATING TABLES:
 
    
 
-      ** FIGURE 1 **
-      ![insertation](https://github.com/user-attachments/assets/0cc7367e-ac8e-43fe-9cc3-b139df867250)
+    FIGURE 1 
+
+      ![image](https://github.com/user-attachments/assets/4d7d791c-4329-45b3-8083-324757145ed9)
+
+
+
+
        
 
-      ** FIGURE 2 **
-      ![insertation 2](https://github.com/user-attachments/assets/59b5a8e4-9453-4c17-ac6d-0b06e4b593ec)
-
-       ** FIGURE 3 **
-       ![insertation 3](https://github.com/user-attachments/assets/fa4c623e-0180-413a-8102-e0da2708fb5a)
-
-      ** FIGURE 4 **
-      
-      ![insertation 4](https://github.com/user-attachments/assets/78bd2800-ad08-405a-864a-7f5aee116d32)
+    
 
 
 
