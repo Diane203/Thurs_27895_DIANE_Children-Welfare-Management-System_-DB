@@ -5,7 +5,7 @@ ID:27895
 Project Name: 
                                                             CHILDREN WELFARE MANAGEMENT SYSTEM
 ---
-I.Phase:Problem Statement and Presentation
+**I.Phase:Problem Statement and Presentation
 -
 INTRODUCTION
 
@@ -51,7 +51,7 @@ These users will interact with the system to manage, update, and retrieve welfar
 ⚫Prevent scheduling conflicts, such as inserting records on public holidays, using intelligent triggers.
 
 
-II. Phase: BUSINESS PROCESS MODELING
+**II. Phase: BUSINESS PROCESS MODELING
 --
 ✅ Scope of the Business Process: Child Admission Process
 
@@ -94,7 +94,7 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 
 
-III. Phase: LOGICAL MODEL DESIGN
+**III. Phase: LOGICAL MODEL DESIGN
 
 
 This is a logical model design of my system.
@@ -210,6 +210,66 @@ This model can handle:
 🟢Restricting insertions on public holidays using triggers
 
 🟢Generating reports via packages/procedures
+
+
+
+**IV. Phase: Database (Pluggable Database) Creation and Naming**
+
+ OVERVIEW ON CREATING PDB:
+
+ ![container pl pdb2](https://github.com/user-attachments/assets/b423bba6-ab88-42c4-ad58-c1428db0fded)
+
+
+
+
+ **V. Phase: Table Implementation and Data Insertion**
+ 
+
+ OVERVIEW ON CREATING TABLES THAT WE USED IN THIS SYSTEM
+ 
+**1. Table Creation**
+
+OVERVIEW ON CREATING TABLES:
+
+![table creation1](https://github.com/user-attachments/assets/f30ccec7-6986-4fa2-9eea-7eed241a0790)
+
+
+![table creation2](https://github.com/user-attachments/assets/1f606404-38f9-4734-8309-a310ddab173f)
+
+
+    
+
+
+
+   **2. Data Insertion:**
+
+   OVERVIEW ON INSERTING DATA:
+
+   
+
+      ** FIGURE 1 **
+      ![insertation](https://github.com/user-attachments/assets/0cc7367e-ac8e-43fe-9cc3-b139df867250)
+       
+
+      ** FIGURE 2 **
+      ![insertation 2](https://github.com/user-attachments/assets/59b5a8e4-9453-4c17-ac6d-0b06e4b593ec)
+
+       ** FIGURE 3 **
+       ![insertation 3](https://github.com/user-attachments/assets/fa4c623e-0180-413a-8102-e0da2708fb5a)
+
+      ** FIGURE 4 **
+      
+      ![insertation 4](https://github.com/user-attachments/assets/78bd2800-ad08-405a-864a-7f5aee116d32)
+
+
+
+      
+
+
+
+
+
+
 
 
 
