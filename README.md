@@ -91,17 +91,30 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 ⚫Administrator: Reviews the report and makes a final decision. If approved, the child is admitted; if not, the process loops back for correction.
 
 
+**BPMN DIAGRAM**
+
+![BPMN 2](https://github.com/user-attachments/assets/64f50a1c-f12b-4a73-9ed4-e969864d0a22)
+
 
 
 
 **III. Phase: LOGICAL MODEL DESIGN
 
 
-This is a logical model design of my system.
+**This is a logical model design of my system.**
 
 
 
 ![conceptual diagram](https://github.com/user-attachments/assets/e7524606-f66f-4663-a38b-5c64422c9f10)
+
+
+**This is a ERD design of this system**
+
+![ERD](https://github.com/user-attachments/assets/981a8199-eac1-4f76-abd0-b64132c95585)
+
+
+
+
 
 
 1.Entity-Relationship (ER) Model
@@ -215,9 +228,34 @@ This model can handle:
 
 **IV. Phase: Database (Pluggable Database) Creation and Naming**
 
- OVERVIEW ON CREATING PDB:
+ **OVERVIEW ON CREATING PDB:**
 
  ![container pl pdb2](https://github.com/user-attachments/assets/b423bba6-ab88-42c4-ad58-c1428db0fded)
+
+
+
+**Oracle Enterprise Manager (OEM) Overview Meaning**
+
+
+**Oracle Enterprise Manager (OEM)** is Oracle's comprehensive database and systems management platform that provides centralized monitoring, administration, and automation capabilities for Oracle databases and IT infrastructure.
+
+
+**Core Purpose**
+OEM serves as a unified management console that allows database administrators and IT teams to monitor, manage, and optimize Oracle database environments from a single web-based interface.
+
+
+**Screenshots from OEM**
+
+**FIGURE**
+
+These screenshot clearly shows my progress so far in OEM
+
+
+![IEOM](https://github.com/user-attachments/assets/0854f86d-075a-4253-83e3-246d1d6ea961)
+
+![IEOM2](https://github.com/user-attachments/assets/d7952a42-176e-443d-adc5-c47043c17499)
+
+
 
 
 
@@ -280,6 +318,81 @@ This model can handle:
 
 
 **1. Database Operations:**
+
+**DDL and DML Operations**
+
+![ddl dml](https://github.com/user-attachments/assets/95ba0ab3-3a87-48a2-a21e-9ae4d56127e7)
+
+
+**Window Functions**
+
+**Window Function Usage**
+
+![window function usage](https://github.com/user-attachments/assets/a1395b05-0d30-432c-a3c7-138a970fa7d0)
+
+
+**Window Function Testing**
+
+![WINDOW FUNCTION TESTING](https://github.com/user-attachments/assets/894ce236-7d59-4a9c-a3bd-f8af7e3ff2e7)
+
+
+
+**procedure example**
+![procedure example](https://github.com/user-attachments/assets/60b8eaa2-3ede-4e7d-99db-390e05bb6eaa)
+
+
+**procedure testing**
+![testing procedure](https://github.com/user-attachments/assets/510e6ace-3d4a-46e8-be12-b29bcd6331c5)
+
+
+**Function Usage**
+
+![function](https://github.com/user-attachments/assets/09e337e4-b2ee-439e-a4c9-1e39ed74766b)
+
+
+**Function Testing**
+
+![fuction testing](https://github.com/user-attachments/assets/4a2c7b82-3597-46b5-9725-044d3ac56a29)
+
+**Package Usage**
+![package xxx1](https://github.com/user-attachments/assets/bce41cab-3e4f-44fc-afaa-166311a56040)
+![package xxx2](https://github.com/user-attachments/assets/894ef044-5ed1-4acf-8a14-acf2d9152da3)
+
+**Testing Package**
+
+![TESTING PACKAGE](https://github.com/user-attachments/assets/1847aac3-b108-4d56-8562-76d1f245b490)
+
+**CURSOR CREATION AND TESTING**
+![CURSOR CREATION AND TESTING](https://github.com/user-attachments/assets/deda89a2-e8a1-449f-ab6b-a6c0e77b2b35)
+
+
+**VII. 	Phase: Advanced Database Programming and Auditing** 
+
+![trigger screenshot](https://github.com/user-attachments/assets/5b8b5f5a-05d0-4ca1-9d32-ebe866af926a)
+
+table public holidays
+![table public holidays](https://github.com/user-attachments/assets/ac6baaa2-7093-4213-b92d-2e3351111495)
+
+![insert on public holiday](https://github.com/user-attachments/assets/09e142f3-13f8-458d-b64e-af5f6606cbbd)
+
+![trigger holidays](https://github.com/user-attachments/assets/9dab4778-bd3c-4a64-b51f-116c8253355b)
+![trigger holidays end](https://github.com/user-attachments/assets/a9440feb-2477-4c24-9c80-fbb8c3e4266c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
