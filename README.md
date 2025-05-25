@@ -472,16 +472,16 @@ These screenshot clearly shows my progress so far in OEM
 
 
 
-![image](https://github.com/user-attachments/assets/df0a00cc-fae7-4b18-8fa4-b027c59c3443)
+
 
 This function returns the number of support services a child has received.
 
 
-✅ Why it's helpful:
+![image](https://github.com/user-attachments/assets/df0a00cc-fae7-4b18-8fa4-b027c59c3443) ✅ Why it's helpful:
 
 ⚫Supports analytics and reporting
 
-⚫Can be reused in procedures or even in SELECT queries
+⚫Can be reused in procedures or even in SELECT queries 
 
 
 
