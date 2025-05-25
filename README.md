@@ -11,14 +11,18 @@ INTRODUCTION
 
 The Children Welfare Management System is an Oracle PL/SQL-based database solution designed to manage the welfare, care, and development of orphaned and vulnerable children under the age of 18, with a special focus on those with disabilities. The system categorizes children into different sections (e.g., disabled, non-disabled) and supports their daily activities, medical care, education, and service tracking through centralized data management.
 
+
 📌Problem Definition:
 
 Many child welfare centers (especially those caring for orphaned or abandoned children with disabilities) rely on manual record-keeping, resulting in data loss, inconsistent tracking, and poor coordination among caregivers, educators, and medical staff. There is a lack of a centralized, secure, and efficient system to manage children’s welfare data — from medical history and educational progress to daily services received.
+
+
 
 🔹 Context:
 
 
 This system will be used in child welfare centers, such as orphanages and social care institutions, where children under 18 — especially those with disabilities — receive long-term care, education, and health services. It replaces manual processes and fragmented records with a unified digital database managed through Oracle PL/SQL.
+
 
 
 🔹 Target Users:
@@ -34,7 +38,10 @@ This system will be used in child welfare centers, such as orphanages and social
 
 ⚫Orphanage management teams
 
+
 These users will interact with the system to manage, update, and retrieve welfare-related information for each child.
+
+
 
 
 🔹 Project Goals:
@@ -51,12 +58,18 @@ These users will interact with the system to manage, update, and retrieve welfar
 ⚫Prevent scheduling conflicts, such as inserting records on public holidays, using intelligent triggers.
 
 
+
+
+
+
 **II. Phase: BUSINESS PROCESS MODELING
 --
 ✅ Scope of the Business Process: Child Admission Process
 
 
 This business process models the admission of a child into a child welfare center using a Management Information System (MIS). It outlines how data is collected, stored, and reviewed before a child is officially admitted into the system. The process ensures that all information is verified and approved through structured interaction between social workers, the MIS database, and administrators.
+
+
 
 
 ✅ Objectives and Expected Outcomes:
@@ -68,7 +81,11 @@ OBJECTIVES:
 
 ⚫Verify and approve admissions through a structured review process.
 
+
+
 EXPECTED OUTCOMES:
+
+
 
 
 ⚫A validated, complete record of each child in the system.
@@ -76,6 +93,8 @@ EXPECTED OUTCOMES:
 ⚫Proper classification of children into appropriate care sections.
 
 ⚫Enhanced decision-making based on accurate and accessible data.
+
+
 
 
 
@@ -91,9 +110,17 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 ⚫Administrator: Reviews the report and makes a final decision. If approved, the child is admitted; if not, the process loops back for correction.
 
 
+
+
+
 **BPMN DIAGRAM**
 
-![BPMN 2](https://github.com/user-attachments/assets/64f50a1c-f12b-4a73-9ed4-e969864d0a22)
+![BPMN 2](https://github.com/user-attachments/assets/37f7122c-86a6-4598-aaba-e32f7367ae9c)
+
+
+
+
+
 
 
 
@@ -101,11 +128,16 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 **III. Phase: LOGICAL MODEL DESIGN
 
 
+
+
+
 **This is a logical model design of my system.**
 
 
 
 ![conceptual diagram](https://github.com/user-attachments/assets/e7524606-f66f-4663-a38b-5c64422c9f10)
+
+
 
 
 **This is a ERD design of this system**
@@ -117,7 +149,11 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 
 
+
+
 1.Entity-Relationship (ER) Model
+
+
 
 1.1.🔹 Entities, Attributes, Data Types, and Keys
 
@@ -129,6 +165,9 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | section\_id   | NUMBER       | Primary Key (PK) |
 | section\_name | VARCHAR2(50) | NOT NULL, UNIQUE |
 
+
+
+
 🟩 children
 | Attribute          | Data Type     | Key / Constraint                           |
 | ------------------ | ------------- | ------------------------------------------ |
@@ -138,6 +177,8 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | gender             | VARCHAR2(10)  | CHECK (gender IN ('Male','Female'))        |
 | disability\_status | VARCHAR2(3)   | CHECK (disability\_status IN ('Yes','No')) |
 | section\_id        | NUMBER        | Foreign Key (FK → sections.section\_id)    |
+
+
 
 
 🟩 education
@@ -151,6 +192,9 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | performance\_notes | VARCHAR2(200) |                                       |
 
 
+
+
+
 🟩 staff
 
 | Attribute       | Data Type     | Key / Constraint |
@@ -159,6 +203,10 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | full\_name      | VARCHAR2(100) | NOT NULL         |
 | position        | VARCHAR2(50)  | NOT NULL         |
 | contact\_number | VARCHAR2(15)  | UNIQUE           |
+
+
+
+
 
 🟩 support_services
 
@@ -173,6 +221,9 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 
 
+
+
+
 ✅ 2. Relationships & Constraints
 
 | Relationship                      | Type | Description                                            |
@@ -181,6 +232,9 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | One child → one education record  | 1:1  | Each child has one main education record               |
 | One child → many support services | 1\:M | A child can receive many services                      |
 | One staff → many support services | 1\:M | One staff member can provide services to many children |
+
+
+
 
 
 🔒 Constraints Used:
@@ -195,7 +249,11 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 🟢DEFAULT value for service_date (set to SYSDATE)
 
 
+
+
+
 ✅ 3. Normalization (to 3NF)
+
 
 
 | Normal Form | How It’s Achieved                                         |
@@ -204,7 +262,10 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 | **2NF**     | All non-key attributes fully dependent on the primary key |
 | **3NF**     | No transitive dependencies; all fields depend only on PK  |
 
+
 ✅ Result: All tables are fully normalized to 3NF
+
+
 
 
 🔹We used 3rd Normal Form (3NF) in the design of your tables to:
@@ -220,7 +281,10 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 
 
+
+
 ✅ 4. Handling Data Scenarios
+
 
 This model can handle:
 
@@ -240,7 +304,11 @@ This model can handle:
 
 
 
+
+
 **IV. Phase: Database (Pluggable Database) Creation and Naming**
+
+
 
  **OVERVIEW ON CREATING PDB:**
 
@@ -249,6 +317,7 @@ This model can handle:
 
 
 **Oracle Enterprise Manager (OEM) Overview Meaning**
+
 
 
 **Oracle Enterprise Manager (OEM)** is Oracle's comprehensive database and systems management platform that provides centralized monitoring, administration, and automation capabilities for Oracle databases and IT infrastructure.
@@ -260,9 +329,13 @@ OEM serves as a unified management console that allows database administrators a
 
 **Screenshots from OEM**
 
+
+
 **FIGURE**
 
+
 These screenshot clearly shows my progress so far in OEM
+
 
 
 ![IEOM](https://github.com/user-attachments/assets/0854f86d-075a-4253-83e3-246d1d6ea961)
@@ -278,6 +351,8 @@ These screenshot clearly shows my progress so far in OEM
  
 
  ❇️OVERVIEW ON CREATING TABLES THAT WE USED IN THIS SYSTEM
+
+ 
  
 **1. Table Creation**
 
@@ -322,6 +397,8 @@ These screenshot clearly shows my progress so far in OEM
 
 
 
+
+
 .**⚠️These are clear querries and output on how we created and inserted data in our system**
 
 
@@ -333,12 +410,16 @@ These screenshot clearly shows my progress so far in OEM
 
 **1. Database Operations:**
 
+
+
 **DDL and DML Operations**
 
 ![ddl dml](https://github.com/user-attachments/assets/95ba0ab3-3a87-48a2-a21e-9ae4d56127e7)
 
 
 **Window Functions**
+
+
 
 **Window Function Usage**
 
@@ -350,6 +431,7 @@ These screenshot clearly shows my progress so far in OEM
 ![WINDOW FUNCTION TESTING](https://github.com/user-attachments/assets/894ce236-7d59-4a9c-a3bd-f8af7e3ff2e7)
 
 
+
 ✅ Why we used it:
 
 ⚫Helps administrators identify high-needs children
@@ -358,24 +440,39 @@ These screenshot clearly shows my progress so far in OEM
 
 
 
+
 **procedure example**
+
+
 ![procedure example](https://github.com/user-attachments/assets/60b8eaa2-3ede-4e7d-99db-390e05bb6eaa)
 
 
+
 **procedure testing**
+
+
 ![testing procedure](https://github.com/user-attachments/assets/510e6ace-3d4a-46e8-be12-b29bcd6331c5)
 
 
+
+
 **Function Usage**
+
 
 ![function](https://github.com/user-attachments/assets/09e337e4-b2ee-439e-a4c9-1e39ed74766b)
 
 
 **Function Testing**
 
+
 ![fuction testing](https://github.com/user-attachments/assets/4a2c7b82-3597-46b5-9725-044d3ac56a29)
 
+
+
+
+
 This function returns the number of support services a child has received.
+
 
 ✅ Why it's helpful:
 
@@ -384,13 +481,19 @@ This function returns the number of support services a child has received.
 ⚫Can be reused in procedures or even in SELECT queries
 
 
+
+
 **Package Usage**
 ![package xxx1](https://github.com/user-attachments/assets/bce41cab-3e4f-44fc-afaa-166311a56040)
 ![package xxx2](https://github.com/user-attachments/assets/894ef044-5ed1-4acf-8a14-acf2d9152da3)
 
+
+
 **Testing Package**
 
 ![TESTING PACKAGE](https://github.com/user-attachments/assets/1847aac3-b108-4d56-8562-76d1f245b490)
+
+
 
 
 🔷Contains:
@@ -398,6 +501,8 @@ This function returns the number of support services a child has received.
 ⚫A procedure to list services per child
 
 ⚫A function to count total services
+
+
 
 ✅ Why we used a package:
 
@@ -409,8 +514,12 @@ This function returns the number of support services a child has received.
 
 
 
+
 **CURSOR CREATION AND TESTING**
+
+
 ![CURSOR CREATION AND TESTING](https://github.com/user-attachments/assets/deda89a2-e8a1-449f-ab6b-a6c0e77b2b35)
+
 
 
 ✅ Why it was used:
@@ -422,9 +531,11 @@ This function returns the number of support services a child has received.
 
 **VII. 	Phase: Advanced Database Programming and Auditing** 
 
+
 **Simple Trigger**
 
 ![trigger screenshot](https://github.com/user-attachments/assets/5b8b5f5a-05d0-4ca1-9d32-ebe866af926a)
+
 
 
 🔎 Purpose:
@@ -444,6 +555,7 @@ Log every successful INSERT into the children table.
 
 PROBLEM STATEMENT:
 
+
  The Children Welfare Management System handles sensitive records such as child profiles, medical details, and service history.To maintain data integrity and ensure security, the system must restrict table manipulations (INSERT, UPDATE, DELETE) during weekdays and on upcoming public holidays (next 30 days only). This prevents unauthorized or accidental changes during official closure periods.
  We will implement auditing to log all attempts to manipulate data and enforce these restrictions using triggers and a holiday table
  
@@ -452,22 +564,32 @@ PROBLEM STATEMENT:
 
 ![table public holidays](https://github.com/user-attachments/assets/ac6baaa2-7093-4213-b92d-2e3351111495)
 
+
+
 ✅STEP 2: Insert into public Holiday
 
 
 ![insert on public holiday](https://github.com/user-attachments/assets/09e142f3-13f8-458d-b64e-af5f6606cbbd)
 
+
+
 ✅ STEP 3: Audit Table to Track User Activity
+
 
 
 ![Audit logs](https://github.com/user-attachments/assets/c596d64c-ce69-4e8e-aab3-c518cdbc7798)
 
 
+
+
 ✅ STEP 3: Security Trigger to Prevent Manipulation on Weekdays and Holidays
+
 
 
 ![trigger holidays](https://github.com/user-attachments/assets/9dab4778-bd3c-4a64-b51f-116c8253355b)
 ![trigger holidays end](https://github.com/user-attachments/assets/a9440feb-2477-4c24-9c80-fbb8c3e4266c)
+
+
 
 
 🔎 Purpose:
@@ -477,6 +599,7 @@ PROBLEM STATEMENT:
 ✅During weekdays (Mon–Fri)
 
 ✅On public holidays within the next 30 days
+
 
 ✅ Why it's critical:
 
