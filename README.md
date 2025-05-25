@@ -2,8 +2,13 @@ Designer: IGIRANEZA DIANE
 
 ID:27895
 
-Project Name: 
-                  HOPE HAVEN                                          CHILDREN WELFARE MANAGEMENT SYSTEM
+Project Name:
+
+![image](https://github.com/user-attachments/assets/a8267382-8855-4aa9-9f63-3e0714dee1ed)    HOPE HAVEN   CHILDREN WELFARE MANAGEMENT SYSTEM
+
+
+
+                                          
 ---
 I.Phase:Problem Statement and Presentation
 -
