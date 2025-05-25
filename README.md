@@ -368,12 +368,35 @@ These screenshot clearly shows my progress so far in OEM
 
 **VII. 	Phase: Advanced Database Programming and Auditing** 
 
+**Simple Trigger**
+
 ![trigger screenshot](https://github.com/user-attachments/assets/5b8b5f5a-05d0-4ca1-9d32-ebe866af926a)
 
-table public holidays
+
+**Compound Trigger**
+PROBLEM STATEMENT:
+
+ The Children Welfare Management System handles sensitive records such as child profiles, medical details, and service history.To maintain data integrity and ensure security, the system must restrict table manipulations (INSERT, UPDATE, DELETE) during weekdays and on upcoming public holidays (next 30 days only). This prevents unauthorized or accidental changes during official closure periods.
+ We will implement auditing to log all attempts to manipulate data and enforce these restrictions using triggers and a holiday table
+ 
+
+✅STEP 1: Reference Table to Store Upcoming Public Holiday
+
 ![table public holidays](https://github.com/user-attachments/assets/ac6baaa2-7093-4213-b92d-2e3351111495)
 
+✅STEP 2: Insert into public Holiday
+
+
 ![insert on public holiday](https://github.com/user-attachments/assets/09e142f3-13f8-458d-b64e-af5f6606cbbd)
+
+✅ STEP 3: Audit Table to Track User Activity
+
+
+![Audit logs](https://github.com/user-attachments/assets/c596d64c-ce69-4e8e-aab3-c518cdbc7798)
+
+
+✅ STEP 3: Security Trigger to Prevent Manipulation on Weekdays and Holidays
+
 
 ![trigger holidays](https://github.com/user-attachments/assets/9dab4778-bd3c-4a64-b51f-116c8253355b)
 ![trigger holidays end](https://github.com/user-attachments/assets/a9440feb-2477-4c24-9c80-fbb8c3e4266c)
