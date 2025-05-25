@@ -206,6 +206,20 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 ✅ Result: All tables are fully normalized to 3NF
 
+
+🔹We used 3rd Normal Form (3NF) in the design of your tables to:
+
+
+⚫Eliminate redundancy (e.g., sections are stored in a separate sections table)
+
+⚫Ensure each table has one purpose (e.g., children, staff, education, etc.)
+
+⚫Support clean relationships through foreign keys
+
+✅ This makes your system easier to maintain, query, and scale.
+
+
+
 ✅ 4. Handling Data Scenarios
 
 This model can handle:
@@ -336,6 +350,13 @@ These screenshot clearly shows my progress so far in OEM
 ![WINDOW FUNCTION TESTING](https://github.com/user-attachments/assets/894ce236-7d59-4a9c-a3bd-f8af7e3ff2e7)
 
 
+✅ Why we used it:
+
+⚫Helps administrators identify high-needs children
+
+⚫Supports data-driven decisions for resource allocation
+
+
 
 **procedure example**
 ![procedure example](https://github.com/user-attachments/assets/60b8eaa2-3ede-4e7d-99db-390e05bb6eaa)
@@ -354,6 +375,15 @@ These screenshot clearly shows my progress so far in OEM
 
 ![fuction testing](https://github.com/user-attachments/assets/4a2c7b82-3597-46b5-9725-044d3ac56a29)
 
+This function returns the number of support services a child has received.
+
+✅ Why it's helpful:
+
+⚫Supports analytics and reporting
+
+⚫Can be reused in procedures or even in SELECT queries
+
+
 **Package Usage**
 ![package xxx1](https://github.com/user-attachments/assets/bce41cab-3e4f-44fc-afaa-166311a56040)
 ![package xxx2](https://github.com/user-attachments/assets/894ef044-5ed1-4acf-8a14-acf2d9152da3)
@@ -362,8 +392,32 @@ These screenshot clearly shows my progress so far in OEM
 
 ![TESTING PACKAGE](https://github.com/user-attachments/assets/1847aac3-b108-4d56-8562-76d1f245b490)
 
+
+🔷Contains:
+
+⚫A procedure to list services per child
+
+⚫A function to count total services
+
+✅ Why we used a package:
+
+⚫Groups related logic in one reusable unit
+
+⚫Improves organization, readability, and maintainability
+
+⚫Allows better modular programming
+
+
+
 **CURSOR CREATION AND TESTING**
 ![CURSOR CREATION AND TESTING](https://github.com/user-attachments/assets/deda89a2-e8a1-449f-ab6b-a6c0e77b2b35)
+
+
+✅ Why it was used:
+
+⚫To loop through all children in a section dynamically
+
+⚫Useful for report generation, data review, and batch processing
 
 
 **VII. 	Phase: Advanced Database Programming and Auditing** 
@@ -373,7 +427,21 @@ These screenshot clearly shows my progress so far in OEM
 ![trigger screenshot](https://github.com/user-attachments/assets/5b8b5f5a-05d0-4ca1-9d32-ebe866af926a)
 
 
+🔎 Purpose:
+Log every successful INSERT into the children table.
+
+
+✅ Why it was used:
+
+⚫To keep a permanent audit trail of when children are added.
+
+⚫Essential for accountability, especially in welfare systems where transparency is key.
+
+
+
 **Compound Trigger**
+
+
 PROBLEM STATEMENT:
 
  The Children Welfare Management System handles sensitive records such as child profiles, medical details, and service history.To maintain data integrity and ensure security, the system must restrict table manipulations (INSERT, UPDATE, DELETE) during weekdays and on upcoming public holidays (next 30 days only). This prevents unauthorized or accidental changes during official closure periods.
@@ -400,6 +468,23 @@ PROBLEM STATEMENT:
 
 ![trigger holidays](https://github.com/user-attachments/assets/9dab4778-bd3c-4a64-b51f-116c8253355b)
 ![trigger holidays end](https://github.com/user-attachments/assets/a9440feb-2477-4c24-9c80-fbb8c3e4266c)
+
+
+🔎 Purpose:
+
+✅ Prevent INSERT, UPDATE, or DELETE on children:
+
+✅During weekdays (Mon–Fri)
+
+✅On public holidays within the next 30 days
+
+✅ Why it's critical:
+
+⚫Protects the data from being changed during non-operational hours or days
+
+⚫Enforces operational policies of a welfare center
+
+⚫Logs both allowed and denied attempts, adding security + audit tracking
 
 
 
