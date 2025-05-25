@@ -268,6 +268,7 @@ The diagram visualizes the Child Admission Process across three swimlanes:
 
 
 
+  ![image](https://github.com/user-attachments/assets/fa61bf68-3fa1-472f-aa49-a8ff4b68e23f)
 🔹We used 3rd Normal Form (3NF) in the design of your tables to:
 
 
@@ -431,6 +432,7 @@ These screenshot clearly shows my progress so far in OEM
 ![WINDOW FUNCTION TESTING](https://github.com/user-attachments/assets/894ce236-7d59-4a9c-a3bd-f8af7e3ff2e7)
 
 
+![image](https://github.com/user-attachments/assets/eeac4839-dfa3-49eb-8a68-69665a7e7d2e)
 
 ✅ Why we used it:
 
@@ -470,6 +472,7 @@ These screenshot clearly shows my progress so far in OEM
 
 
 
+![image](https://github.com/user-attachments/assets/df0a00cc-fae7-4b18-8fa4-b027c59c3443)
 
 This function returns the number of support services a child has received.
 
@@ -503,6 +506,7 @@ This function returns the number of support services a child has received.
 ⚫A function to count total services
 
 
+![image](https://github.com/user-attachments/assets/71dad8cb-6543-4e91-8410-cd6ca9d8891a)
 
 ✅ Why we used a package:
 
@@ -521,6 +525,7 @@ This function returns the number of support services a child has received.
 ![CURSOR CREATION AND TESTING](https://github.com/user-attachments/assets/deda89a2-e8a1-449f-ab6b-a6c0e77b2b35)
 
 
+![image](https://github.com/user-attachments/assets/df74e8b6-f56e-4c5b-9d46-c5dbddca6a72)
 
 ✅ Why it was used:
 
@@ -541,6 +546,7 @@ This function returns the number of support services a child has received.
 🔎 Purpose:
 Log every successful INSERT into the children table.
 
+![image](https://github.com/user-attachments/assets/496061f5-d670-4292-9c60-e07a6b5bc4d0)
 
 ✅ Why it was used:
 
@@ -552,6 +558,7 @@ Log every successful INSERT into the children table.
 
 **Compound Trigger**
 
+![image](https://github.com/user-attachments/assets/3e7080e1-fe51-44b3-b31e-ba44e5f63d13)
 
 PROBLEM STATEMENT:
 
@@ -600,6 +607,7 @@ PROBLEM STATEMENT:
 
 ✅On public holidays within the next 30 days
 
+![image](https://github.com/user-attachments/assets/1ed35734-0c98-4693-9ff1-1edc522ccfbe)
 
 ✅ Why it's critical:
 
