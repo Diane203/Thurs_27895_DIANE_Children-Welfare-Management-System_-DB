@@ -3,7 +3,7 @@ Designer: IGIRANEZA DIANE
 ID:27895
 
 Project Name: 
-                                                            CHILDREN WELFARE MANAGEMENT SYSTEM
+                  HOPE HAVEN                                          CHILDREN WELFARE MANAGEMENT SYSTEM
 ---
 I.Phase:Problem Statement and Presentation
 -
